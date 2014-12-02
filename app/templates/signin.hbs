@@ -1,0 +1,18 @@
+<div class="col-md-6">
+  <form class="form" role="form">
+    <div class="form-group">
+      <label>username</label>
+      {{view Ember.TextField classNames="form-control " value=identification name=""}}
+    </div>
+    <div class="form-group">
+      <label>password</label>
+      {{view Ember.TextField type="password" classNames="form-control passworda" value=password name=""}}
+    </div>
+    <div class="form-group">
+      <button class="btn btn-default" {{action "authenticate"}}>Signin</button>
+    </div>
+    <div class="text-center text-danger">
+      <strong>{{serverErrorMessage}}</strong>
+    </div>
+  </form>
+</div>

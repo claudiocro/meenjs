@@ -1,0 +1,23 @@
+<div class="page-header">
+  <h1>{{title}}</h1>
+</div>
+{{#if controller.isEditable}}
+<div class="pull-right">
+  {{#link-to "article.edit" model class="btn btn-primary"}}
+    <i class="glyphicon glyphicon-edit"></i>
+  {{/link-to}}
+  <a class="btn btn-primary" {{action delete}}>
+    <i class="glyphicon glyphicon-trash"></i>
+  </a>
+</div>
+{{/if}}
+<small>
+  <em class="text-muted">
+    Posted on
+    <span>{{created}}</span>
+    by
+
+    <span>{{model.user.displayName}}</span>
+  </em>
+</small>
+<p class="lead">{{model.content}}</p>

@@ -1,0 +1,18 @@
+---
+language: node_js
+
+sudo: false
+
+cache:
+  directories:
+    - node_modules
+
+install:
+  - npm install -g bower
+  - npm install -g ember-cli
+  - npm install -g grunt
+  - npm install
+  - bower install
+
+script:
+  - grunt test

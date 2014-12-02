@@ -1,0 +1,27 @@
+<div class="page-header">
+  <h1>Edit Article</h1>
+</div>
+<div class="col-md-12">
+  <form name="articleForm" class="form-horizontal">
+    <fieldset>
+      <div class="form-group">
+        <label class="control-label" for="title">Title</label>
+        <div class="controls">
+          {{input value=title classNames="form-control"}}
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label" for="content">Content</label>
+        <div class="controls">
+          {{textarea value=model.content classNames="form-control" cols="30" rows="10"}}
+        </div>
+      </div>
+      <div class="form-group">
+        <button {{action 'save'}} class="btn btn-primary">save</button>
+      </div>
+      <div data-ng-show="error" class="text-center text-danger">
+        <strong>{{serverErrorMessage}}</strong>
+      </div>
+    </fieldset>
+  </form>
+</div>

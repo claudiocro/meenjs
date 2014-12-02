@@ -1,0 +1,24 @@
+<div class="col-md-6">
+{{model}}
+  <form class="form" role="form">
+    <div class="form-group">
+      <label>First Name</label>
+      {{view Ember.TextField classNames="form-control" value=model.firstName}}
+    </div>
+    <div class="form-group">
+      <label>Last Name</label>
+      {{view Ember.TextField classNames="form-control" value=model.lastName}}
+    </div>
+    <div class="form-group">
+      <label>Username</label>
+      {{view Ember.TextField classNames="form-control" value=model.username disabled="true"}}
+    </div>
+    <div class="form-group">
+      <label>Email</label>
+      {{view Ember.TextField classNames="form-control" value=model.email}}
+    </div>
+    <div class="form-group">
+      <button class="btn btn-default" {{action "save"}}>Speichern</button>
+    </div>
+  </form>
+</div>
