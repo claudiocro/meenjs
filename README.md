@@ -9,8 +9,8 @@ A short introduction of this app could easily go here.
 You will need the following things properly installed on your computer.
 
 * [Git](http://git-scm.com/)
-* [Mongodb](http://mongodb.org)
-* [Node.js](http://nodejs.org/)
+* [MongoDB](http://mongodb.org)
+* [NodeJS](http://nodejs.org/)
 * [NPM](http://npmjs.org/)
 * [Bower](http://bower.io/)
 * [Grunt](http://gruntjs.com/)
@@ -29,7 +29,7 @@ You will need the following things properly installed on your computer.
 * `grunt serve`
 * Visit your app at http://localhost:4200
 * Debug your server at http://localhost:4202/debug?port=5858
-* Your api server ist running at http://localhost:4200
+* Your api server ist running at http://localhost:4201
 
 ### Running Tests
 
