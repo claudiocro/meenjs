@@ -28,7 +28,7 @@ var SignupAuthenticator = BaseAuthenticator.extend({
         reject();
       } else {
         Ember.$.ajax({
-          url: 'http://localhost:4201/auth/token',
+          url: '/auth/token',
           type: 'POST',
           data: JSON.stringify({token: data.token}),
           contentType: 'application/json',

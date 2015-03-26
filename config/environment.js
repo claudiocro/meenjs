@@ -18,7 +18,7 @@ module.exports = function(environment) {
       // when it is created
     }
   };
-  ws://localhost:35729
+  //ws://localhost:35729
 
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;
