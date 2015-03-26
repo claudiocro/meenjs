@@ -11,7 +11,6 @@ var fs = require('fs'),
   expressJwt = require('express-jwt');
 
 module.exports = function(app,db) {
-
   // Globbing model files
   config.getModuleFiles('./server/app/models/**/*.js').forEach(function(modelPath) {
     require(path.resolve(modelPath));

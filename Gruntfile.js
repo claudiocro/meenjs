@@ -50,7 +50,7 @@ module.exports = function(grunt) {
 
     shell: {
       serve: {
-        command: 'ember serve --proxy 4201'
+        command: 'ember serve --proxy http://localhost:4201'
       },
       test: {
         command: 'ember test --server'

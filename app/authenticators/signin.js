@@ -4,8 +4,8 @@ import SignupAuthenticator from './signup';
 
 export default SignupAuthenticator.extend({
   store: null,
-  //tokenEndpoint: '/auth/signin',
-  tokenEndpoint: 'http://localhost:4201/auth/signin',
+  tokenEndpoint: '/auth/signin',
+  //tokenEndpoint: 'http://localhost:4201/auth/signin',
 
   authenticate: function(credentials) {
     var _this = this;
