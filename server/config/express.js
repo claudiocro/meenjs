@@ -7,6 +7,7 @@ var fs = require('fs'),
   bodyParser = require('body-parser'),
   methodOverride = require('method-override'),
   config = require('./config'),
+  //cconfig = require('./config/config'),
   path = require('path'),
   expressJwt = require('express-jwt');
 

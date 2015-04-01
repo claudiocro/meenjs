@@ -18,5 +18,6 @@ module.exports = {
 		options: {
 			stream: 'access.log'
 		}
-	}
+	},
+  jwtSecret: "secret2"
 };

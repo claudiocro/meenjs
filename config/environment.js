@@ -45,7 +45,7 @@ module.exports = function(environment) {
   }
 
 
-  ENV.contentSecurityPolicy = {
+  ENV.aacontentSecurityPolicy = {
     'connect-src': "http://localhost:4201"
   };
 

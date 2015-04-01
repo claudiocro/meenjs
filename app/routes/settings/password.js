@@ -11,6 +11,8 @@ export default Ember.Route.extend({
       var self = this;
       this.get('controller.model').save().then(function(){
         self.transitionTo('index');
+      }, function(reason) {
+        self.set('controller.serverErrorMessage', reason.responseJSON.message);
       });
     }
   }
